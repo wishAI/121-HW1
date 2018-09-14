@@ -1,6 +1,10 @@
 \item (9 marks) One way to better understand a computational system is to look at the minimum set of primitives (simple operations) that are sufficient to express all the tasks performed by the system. In  this question, you will consider a (mythical)  ANDNOT gate, and prove that every  truth table  can be implemented  using \textbf {only}  ANDNOT gates  and the constant  \texttt  {True}. We  define  the  operation of  the  ANDNOT  gate as  follows: $x \textrm{ANDNOT} y$  is the same as  $x \land \lnot y$.
 \begin{enumerate}
 \item (3 marks) Show that $\lnot$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given a single proposition $p$, is logically equivalent to $\lnot p$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
+
+Let $\lnot x = y$ \\
+$ \lnot x = y = T \land y = T \land\lnot x = T \textrm{ANDNOT} x$
+
 % You may use tikz to draw fancy latex gates, or you can
 % create them via logisim, screenshot the result, 
 % upload it to this project, and then use the 
@@ -10,6 +14,9 @@
 % gates, so there will be no confusion possible).
 \vspace{4in}
 \item (3 marks) Show that $\land$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given propositions $p$ and $q$, is logically equivalent to $p \land q$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
+
+
+
 \vspace{4in}
 \item (3 marks)  Show that $\lor$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given propositions $p$ and $q$, is logically equivalent to $p \lor q$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
 \vspace{4in}
