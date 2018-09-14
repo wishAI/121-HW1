@@ -1,0 +1,26 @@
+\item  Design  a circuit that  takes five inputs $x_1$,  $x_2$, $x_3$, $x_4$,  $x_5$ and
+  outputs \texttt  {true} if (and only  if) there is an ``isolated value''. We say an input is {\em isolated}
+  if it is T and in-between two F values, or F and in-between two T values. 
+ For instance, your  circuit should output  \texttt {true} in  the following
+  three cases:
+  \begin{itemize}
+  \item  $x_1   =  \texttt{true}$,   $x_2  =   \texttt{true}$,  $x_3   =  \texttt{true}$,
+    $x_4 = \texttt{false}$, $x_5 = \texttt{true}$.
+  \item  $x_1   =  \texttt{false}$,  $x_2   =  \texttt{true}$,  $x_3   =  \texttt{false}$,
+    $x_4 = \texttt{true}$, $x_5 = \texttt{false}$.
+  \item  $x_1   =  \texttt{true}$,  $x_2   =  \texttt{false}$,  $x_3   =  \texttt{true}$,
+    $x_4 = \texttt{false}$, $x_5 = \texttt{true}$.
+  \end{itemize}
+  but it should output \texttt {false} in these cases:
+  \begin{itemize}
+  \item  $x_1   =  \texttt{false}$,   $x_2  =   \texttt{true}$,  $x_3   =  \texttt{true}$,
+    $x_4 = \texttt{false}$, $x_5 = \texttt{false}$.
+  \item  $x_1   =  \texttt{true}$,   $x_2  =   \texttt{true}$,  $x_3   =  \texttt{false}$,
+    $x_4 = \texttt{false}$, $x_5 = \texttt{true}$.
+  \item   $x_1  =   \texttt{false}$,  $x_2   =  \texttt{true}$,   $x_3  =   \texttt{true}$,
+    $x_4 = \texttt{true}$, $x_5 = \texttt{false}$.
+  \end{itemize}
+  Points given  for this question will  depend in part  on the elegance of  your solution.
+  Using a truth  table will work, but will  give a very large circuit. Try  to think about
+  the kinds of inputs that are (or are not) permissible instead. Justify your answer!
+    \newpage

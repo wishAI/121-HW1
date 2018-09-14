@@ -1,0 +1,89 @@
+\item (8 marks) The truth table below defines the truth value of $s$ for each combination of truth values of $x_0,x_1,x_2$ and $x_3$.
+
+\begin{tabular}{|c|c|c|c||c|}
+\hline
+$x_0$ & $x_1$ & $x_2$ & $x_3$ & $s$\\
+\hline
+\hline
+F & F & F & F & T\\
+\hline
+F & F & F & T & F\\
+\hline
+F & F & T & F & T\\
+\hline
+F & F & T & T & T\\
+\hline
+F & T & F & F & F\\
+\hline
+F & T & F & T & T\\
+\hline
+F & T & T & F & F\\
+\hline
+F & T & T & T & F\\
+\hline
+T & F & F & F & T \\
+\hline
+T & F & F & T & F\\
+\hline
+T & F & T & F & T\\
+\hline
+T & F & T & T & T\\
+\hline
+T & T & F & F & T\\
+\hline
+T & T & F & T & F\\
+\hline
+T & T & T & F & T\\
+\hline
+T & T & T & T & T\\
+\hline
+\end{tabular}
+
+\begin{enumerate}
+\item Find a logic formula for $s$ that uses each variable at most twice. Then verify the correctness of your formula by drawing a truth table corresponding to this formula, including the truth values of all relevant sub-formulas. Enter your response in the table below. We have provided at least as many columns as you'll need. Be sure to fill in the column headings!
+
+\LARGE
+\begin{tabular}{|c|c|c|c||c|c|c|c|c|}
+\hline
+$x_0$ & $x_1$ & $x_2$ & $x_3$ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~\\
+\hline
+\hline
+F & F & F & F & & & & &\\
+\hline
+F & F & F & T & & & & &\\
+\hline
+F & F & T & F & & & & &\\
+\hline
+F & F & T & T & & & & &\\
+\hline
+F & T & F & F & & & & &\\
+\hline
+F & T & F & T & & & & &\\
+\hline
+F & T & T & F & & & & &\\
+\hline
+F & T & T & T & & & & &\\
+\hline
+T & F & F & F & & & & &\\
+\hline
+T & F & F & T & & & & &\\
+\hline
+T & F & T & F & & & & &\\
+\hline
+T & F & T & T & & & & &\\
+\hline
+T & T & F & F & & & & &\\
+\hline
+T & T & F & T & & & & &\\
+\hline
+T & T & T & F & & & & &\\
+\hline
+T & T & T & T & & & & &\\
+\hline
+\end{tabular}
+\large
+
+\item Now  create a circuit with inputs $x_0,x_1,x_2,x_3$ and whose output is the value $s$ described by the truth table. Design your circuit only using AND, OR, XOR or NOT gates. Your mark will depend on using as few  AND, OR, XOR gates as possible.  
+
+
+\end{enumerate}
