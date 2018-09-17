@@ -21,7 +21,7 @@ F & T & T & F & F\\
 \hline
 F & T & T & T & F\\
 \hline
-T & F & F & F & T \\
+T & F & F & F & T\\
 \hline
 T & F & F & T & F\\
 \hline
@@ -42,43 +42,46 @@ T & T & T & T & T\\
 \begin{enumerate}
 \item Find a logic formula for $s$ that uses each variable at most twice. Then verify the correctness of your formula by drawing a truth table corresponding to this formula, including the truth values of all relevant sub-formulas. Enter your response in the table below. We have provided at least as many columns as you'll need. Be sure to fill in the column headings!
 
+\bigbreak
+$ (x_0 \lor x_1) \oplus (x_2 \lor\lnot x_3) \oplus x_0 $
+
 \LARGE
 \begin{tabular}{|c|c|c|c||c|c|c|c|c|}
 \hline
-$x_0$ & $x_1$ & $x_2$ & $x_3$ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~ & ~~~~~~~~~~\\
+$x_0$ & $x_1$ & $x_2$ & $x_3$ & $\lnot x_3$ & $x_0 \lor x_1$ & $x_2 \lor\lnot x_3$ & $(x_0 \lor x_1) $ & out & & & & & & & & \oplus (x_2 \lor\lnot x_3) & \\
 \hline
 \hline
-F & F & F & F & & & & &\\
+F & F & F & F & T & F & & &\\
 \hline
-F & F & F & T & & & & &\\
+F & F & F & T & F & F & & &\\
 \hline
-F & F & T & F & & & & &\\
+F & F & T & F & T & F & & &\\
 \hline
-F & F & T & T & & & & &\\
+F & F & T & T & F & F & & &\\
 \hline
-F & T & F & F & & & & &\\
+F & T & F & F & T & T & & &\\
 \hline
-F & T & F & T & & & & &\\
+F & T & F & T & F & T & & &\\
 \hline
-F & T & T & F & & & & &\\
+F & T & T & F & T & T & & &\\
 \hline
-F & T & T & T & & & & &\\
+F & T & T & T & F & T & & &\\
 \hline
-T & F & F & F & & & & &\\
+T & F & F & F & T & T & & &\\
 \hline
-T & F & F & T & & & & &\\
+T & F & F & T & F & T & & &\\
 \hline
-T & F & T & F & & & & &\\
+T & F & T & F & T & T & & &\\
 \hline
-T & F & T & T & & & & &\\
+T & F & T & T & F & T & & &\\
 \hline
-T & T & F & F & & & & &\\
+T & T & F & F & T & T & & &\\
 \hline
-T & T & F & T & & & & &\\
+T & T & F & T & F & T & & &\\
 \hline
-T & T & T & F & & & & &\\
+T & T & T & F & T & T & & &\\
 \hline
-T & T & T & T & & & & &\\
+T & T & T & T & F & T & & &\\
 \hline
 \end{tabular}
 \large
@@ -87,3 +90,4 @@ T & T & T & T & & & & &\\
 
 
 \end{enumerate}
+

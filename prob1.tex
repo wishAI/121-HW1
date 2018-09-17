@@ -2,6 +2,7 @@
 \begin{enumerate}
 \item (3 marks) Show that $\lnot$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given a single proposition $p$, is logically equivalent to $\lnot p$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
 
+\bigbreak
 Let $\lnot x = y$ \\
 $ \lnot x = y = T \land y = T \land\lnot x = T \textrm{ANDNOT} x$
 
@@ -15,10 +16,17 @@ $ \lnot x = y = T \land y = T \land\lnot x = T \textrm{ANDNOT} x$
 \vspace{4in}
 \item (3 marks) Show that $\land$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given propositions $p$ and $q$, is logically equivalent to $p \land q$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
 
-
+\bigbreak
+$x \land y = x \land\lnot (\lnot y)$ = x \land\lnot (T \land\lnot y) = x \textrm{ANDNOT} (T \textrm{ANDNOT} y)$
 
 \vspace{4in}
 \item (3 marks)  Show that $\lor$ can be simulated using only ANDNOT and \texttt {True}. That is, design a logical expression that uses only ANDNOT and \texttt {True} and that, given propositions $p$ and $q$, is logically equivalent to $p \lor q$. You must prove that your logical expression is correct using equivalence rules. (See, e.g., Epp 4ed page 35, or Dave's excellent formula sheet)
+
+\bigbreak
+$ x \lor y = $ \\
+$ \lnot ( \lnot x \land y ) = T \land\lnot ((T \land\lnot x) \land\lnot y) $ \\
+$ = T \textrm{ANDNOT} ((T \textrm{ANDNOT} x) \textrm{ANDNOT} y) $
+
 \vspace{4in}
 \end{enumerate}
 Since for every truth table over $k$ atomic propositions, we can write a propositional form that matches the truth table using $\lnot$, $\land$ and $\lor$, your answers to parts~(a), (b) and~(c) show that you every propositional form is logically equivalent to a propositional form that uses only ANDNOT and \texttt {True}.
